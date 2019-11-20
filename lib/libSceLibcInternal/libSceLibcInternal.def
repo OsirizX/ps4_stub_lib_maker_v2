@@ -1285,6 +1285,7 @@ fun:
 	clearerr
 	clearerr_unlocked
 	clock
+  closedir
 	copysign
 	copysignf
 	copysignl
@@ -1539,6 +1540,7 @@ fun:
 	nexttowardf
 	nexttowardl
 	nrand48
+  opendir
 	perror
 	posix_memalign
 	pow
@@ -1560,6 +1562,7 @@ fun:
 	rand
 	rand_r
 	rand_s
+  readdir
 	realloc
 	reallocalign
 	remainder
