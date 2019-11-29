@@ -1242,6 +1242,7 @@ fun:
 	acoshf
 	acoshl
 	acosl
+  alarm
 	asctime
 	asctime_s
 	asin
@@ -1612,6 +1613,7 @@ fun:
 	setjmp
 	setlocale
 	setvbuf
+  signal
 	sin
 	sinf
 	sinh
