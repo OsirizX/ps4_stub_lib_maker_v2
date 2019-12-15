@@ -83,6 +83,11 @@ int sceKernelSendNotificationRequest(int device, SceNotificationRequest* req, si
 
 int syscall(int num, ...);
 
+typedef struct DIR DIR;
+DIR *opendir(const char *filename);
+struct dirent *readdir(DIR *dirp);
+int closedir(int *dirp);
+
 #ifdef __cplusplus
 }
 #endif
