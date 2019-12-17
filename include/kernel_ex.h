@@ -86,7 +86,7 @@ int syscall(int num, ...);
 typedef struct DIR DIR;
 DIR *opendir(const char *filename);
 struct dirent *readdir(DIR *dirp);
-int closedir(int *dirp);
+int closedir(DIR *dirp);
 
 #ifdef __cplusplus
 }
