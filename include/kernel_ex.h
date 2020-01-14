@@ -87,6 +87,8 @@ typedef struct DIR DIR;
 DIR *opendir(const char *filename);
 struct dirent *readdir(DIR *dirp);
 int closedir(DIR *dirp);
+int gettimeofday(struct timeval *, struct timezone *);
+int settimeofday(const struct timeval *, const struct timezone *);
 
 #ifdef __cplusplus
 }
