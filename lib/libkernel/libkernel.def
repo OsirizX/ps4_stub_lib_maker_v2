@@ -254,6 +254,7 @@ fun:
 	scePthreadSetspecific
 	scePthreadTestcancel
 	scePthreadYield
+  signal
 
 obj:
 	__stack_chk_guard
