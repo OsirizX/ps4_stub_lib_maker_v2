@@ -75,6 +75,10 @@ fun:
 	sceKernelGetTscFrequency
 	sceKernelIsNeoMode
 	sceKernelIsStack
+  sceKernelJitCreateAliasOfSharedMemory
+  sceKernelJitCreateSharedMemory
+  sceKernelJitGetSharedMemoryInfo
+  sceKernelJitMapSharedMemory
 	sceKernelLoadStartModule
 	sceKernelLseek
 	sceKernelLwfsAllocateBlock
