@@ -71,6 +71,7 @@ fun:
 	sceKernelGetProcessTimeCounterFrequency
 	sceKernelGetProcParam
 	sceKernelGetPrtAperture
+  sceKernelGetSystemSwVersion
 	sceKernelGettimeofday
 	sceKernelGetTscFrequency
 	sceKernelIsNeoMode

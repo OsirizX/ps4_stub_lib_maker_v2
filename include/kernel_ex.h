@@ -65,6 +65,12 @@ TYPE_BEGIN(struct _SceNotificationRequest, SIZEOF_SCE_NOTIFICATION_REQUEST);
 TYPE_END();
 typedef struct _SceNotificationRequest SceNotificationRequest;
 
+typedef struct {
+  uint64_t unk1;
+  char version_string[0x1C];
+  uint32_t version;
+} SceFwInfo;
+
 int sceKernelError(int error);
 
 const char* sceKernelGetFsSandboxRandomWord(void);
@@ -76,6 +82,8 @@ int DLL_EXPORT sceKernelGetModuleInfoByName(const char* name, SceKernelModuleInf
 int DLL_EXPORT sceKernelGetModuleInfoExByName(const char* name, SceKernelModuleInfoEx* info);
 
 int sceKernelSendNotificationRequest(int device, SceNotificationRequest* req, size_t size, int blocking);
+
+int sceKernelGetSystemSwVersion(SceFwInfo* fw_info);
 
 #define	SYS_getdents 272
 #define SYS_dynlib_get_info 593
