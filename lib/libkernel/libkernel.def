@@ -6,6 +6,7 @@ fun:
 	__tls_get_addr
 	getargc
 	getargv
+  getpid
 	sceKernelAddFileEvent
 	sceKernelAddHRTimerEvent
 	sceKernelAddReadEvent
@@ -259,6 +260,8 @@ fun:
 	scePthreadSetspecific
 	scePthreadTestcancel
 	scePthreadYield
+  shm_open
+  shm_unlink
   signal
 
 obj:
