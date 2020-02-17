@@ -15,7 +15,9 @@ fun:
 	sceKernelAddUserEventEdge
 	sceKernelAddWriteEvent
 	sceKernelAllocateDirectMemory
+  sceKernelAllocateDirectMemoryForMiniApp
 	sceKernelAllocateMainDirectMemory
+  sceKernelAllocateTraceDirectMemory
 	sceKernelAvailableDirectMemorySize
 	sceKernelAvailableFlexibleMemorySize
 	sceKernelBatchMap

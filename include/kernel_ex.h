@@ -85,6 +85,9 @@ int sceKernelSendNotificationRequest(int device, SceNotificationRequest* req, si
 
 int sceKernelGetSystemSwVersion(SceFwInfo* fw_info);
 
+int32_t sceKernelAllocateDirectMemoryForMiniApp(off_t start, off_t end, size_t len, size_t align, int type, off_t *addr);
+int32_t sceKernelAllocateTraceDirectMemory(size_t len, size_t align, int type, off_t *addr);
+
 #define	SYS_getdents 272
 #define SYS_dynlib_get_info 593
 #define SYS_dynlib_get_info_ex 608
