@@ -87,6 +87,12 @@ int sceKernelGetSystemSwVersion(SceFwInfo* fw_info);
 
 int32_t sceKernelAllocateDirectMemoryForMiniApp(off_t start, off_t end, size_t len, size_t align, int type, off_t *addr);
 int32_t sceKernelAllocateTraceDirectMemory(size_t len, size_t align, int type, off_t *addr);
+int32_t sceKernelReleaseTraceDirectMemory(off_t start, size_t len);
+int32_t sceKernelMapNamedSystemFlexibleMemory(void** addr, size_t len, int prot, int flags, const char *name);
+int32_t sceKernelInternalMapDirectMemory(void **addr, size_t len, int prot, int flags, off_t start, size_t align);
+int32_t sceKernelInternalMapNamedDirectMemory(void **addr, size_t len, int prot, int flags, off_t start, size_t align, const char *name);
+int32_t sceKernelInternalMemoryGetAvailableSize(size_t *size);
+int32_t sceKernelSetPhysFmemLimit(size_t size);
 
 #define	SYS_getdents 272
 #define SYS_dynlib_get_info 593
