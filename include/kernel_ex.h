@@ -93,6 +93,8 @@ int32_t sceKernelInternalMapDirectMemory(void **addr, size_t len, int prot, int 
 int32_t sceKernelInternalMapNamedDirectMemory(void **addr, size_t len, int prot, int flags, off_t start, size_t align, const char *name);
 int32_t sceKernelInternalMemoryGetAvailableSize(size_t *size);
 int32_t sceKernelSetPhysFmemLimit(size_t size);
+int32_t sceKernelGetResidentCount(pid_t pid);
+int32_t sceKernelGetResidentFmemCount(pid_t pid);
 
 #define	SYS_getdents 272
 #define SYS_dynlib_get_info 593
